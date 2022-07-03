@@ -1,4 +1,5 @@
-echo "Enter your Domain Name:::"
+echo -e "\e[31m  "Enter the domain::: " \e[1m" 
+"
 read s
 
 
