@@ -1,4 +1,4 @@
-
+echo "Enter the domain:"
 read s
 
 
