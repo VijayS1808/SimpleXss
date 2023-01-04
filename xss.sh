@@ -77,12 +77,11 @@ cd output
 
 mv -v $1.txt /media/vijay/KALI-D/XSS
 
-mv $1.txt >> urls.txt
-
-rm $1.txt 
 
 cd ..
 
+mv $1.txt >> urls.txt
+rm $1.txt 
 
 rm -rf output
 
@@ -135,5 +134,5 @@ echo -e "${Y}"
 
 cat kxss.txt | grep "=" | qsreplace '"><img src=x onerror=confirm(1)>' | rxss | tee -a rxss.txt
 
-rm kxss.txt
+rm kxss.txt clean.txt subdomains.txt
 
